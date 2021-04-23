@@ -1,4 +1,4 @@
-# Sources  
+# References  
 https://www.webtips.dev/how-to-easily-fetch-data-with-react-hooks  
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON  
 

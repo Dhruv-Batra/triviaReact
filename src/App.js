@@ -7,16 +7,32 @@ import React, { useEffect } from "react";
 function App() {
 
   const[data,setData]=useState(null);
+  const[Printer,setPrinter]=useState(<p>loading...</p>);
 
   const getData = () => fetch('https://opentdb.com/api.php?amount=10&category=15&type=multiple').then(response => response.json());
 
   useEffect(()=>{
     (async()=>{
-      await getData().then(response => setData(response['results']));
+      await getData().then(response => setData(response['results'])).then(printa());
     })();
   }, []);
 
-  console.log(data);
+  function printa() {
+      console.log(data);
+      if (data != null) {
+        setPrinter(data.map( item => (
+          <div>
+            <div className="Rect">
+              <p>{item.question}</p>
+              <p>howdy</p>
+            </div>
+            <br></br>
+          </div>
+        )));
+      }else{
+        setPrinter(<p>failed</p>);
+      }
+  }
 
   return (
     <div className="App">
@@ -32,6 +48,7 @@ function App() {
       </header>
       <div class="App-body">
         <p>sup bro</p>
+        {Printer}
       </div>  
     </div>
   );
