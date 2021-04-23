@@ -1,7 +1,8 @@
 # References  
 https://www.webtips.dev/how-to-easily-fetch-data-with-react-hooks  
 https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON  
-
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 
 # Getting Started with Create React App
 

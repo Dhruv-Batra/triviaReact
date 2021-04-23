@@ -17,6 +17,8 @@ function App() {
     })();
   }, []);
 
+
+
   function printa() {
       console.log(data);
       if (data != null) {
@@ -24,13 +26,16 @@ function App() {
           <div>
             <div className="Rect">
               <p>{item.question}</p>
-              <p>howdy</p>
+              <button>{item.correct_answer}</button>
+              <button>{item.incorrect_answers[0]}</button>
+              <button>{item.incorrect_answers[1]}</button>
+              <button>{item.incorrect_answers[2]}</button>
             </div>
             <br></br>
           </div>
         )));
       }else{
-        setPrinter(<p>failed</p>);
+        setPrinter(<p>Program Failed -</p>);
       }
   }
 
@@ -47,7 +52,7 @@ function App() {
         </div>
       </header>
       <div class="App-body">
-        <p>sup bro</p>
+        <p>Are you up to the challenge?!?!</p>
         {Printer}
       </div>  
     </div>
