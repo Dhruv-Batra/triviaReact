@@ -46,7 +46,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   display: grid;
-  grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   border:3px solid #000;
   border-radius: 25px;
   grid-gap: 15px;
